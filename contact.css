@@ -1,0 +1,211 @@
+body {
+    background-color: black;
+}
+#navigation_bar {
+    position: fixed;
+    z-index: 1;
+    padding: 7px;
+    border: 3px solid darkslateblue;
+    box-shadow: #2b5876;
+    height: 3.5rem;
+    background: rgb(7,1,96);
+    background: linear-gradient(90deg, rgba(7,1,96,1) 0%, rgba(79,1,1,1) 50%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;    
+}
+#navigation_bar h3 {
+    padding-left: 9px;
+    font-family: Georgia, serif;
+    color: white;
+}
+#navigation_bar a{
+    text-decoration: none;
+        font-family: Georgia, serif;
+        padding-top: 3px;
+        padding-left: 6px;
+        padding-right: 9px;
+        background-color:rgb(51, 4, 4);
+        border-radius: 20px;
+        color: wheat;
+}
+#navigation_bar #nobg{
+    background: none;
+}
+#top {
+    color: rgb(51, 4, 4);
+    font-weight: bolder;
+    margin-top: 6em;
+    height: 24em;
+    background-attachment: initial;
+    background-image: url(/images/abc.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+#top h1 {
+    padding-top: 4em;
+}
+#bottom {
+    /* margin: 1em; */
+    border-radius: 9px;
+    /* padding: 3em 1em 3em 1em; */
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+#bottom h2{
+    text-align: center;
+    font-weight: bolder;
+}
+#bottom p{
+    font-weight: bold;
+}
+button{
+    width: 12em;
+    background-color:#f6d365;
+}
+button:hover {
+transform: scale(1.2);
+}
+footer{
+    position: relative;
+    background: rgb(93,0,0);
+    background: linear-gradient(90deg, rgba(93,0,0,1) 0%, rgba(6,2,91,1) 45%, rgba(0,0,0,1) 100%);
+    color: whitesmoke;
+}
+footer .head2 {
+    position: absolute;
+    padding: 9px;
+    background-color:rgb(51, 4, 4);
+    border-radius: 20px; 
+}
+.links li{
+    font-size:larger;
+    text-decoration: none;
+    display: inline-flex;
+}
+.links i {
+    padding-top: 15px;
+    padding-left: 6px;
+}
+#last {
+    display: flex;
+    justify-content: space-between;
+}
+#last a {
+    text-decoration: none;
+    color: aqua;
+}
+@media (width<=860px) and (width>=630px){
+    #navigation_bar {
+        left: 0px;
+        right: 0px;
+        top: 9px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    #navigation_bar a{        
+        font-weight: bold;
+    }
+    #bottom {
+        margin: 2em;
+        padding: 4em 2em 4em 2em;
+    }
+    footer {
+        margin: 20px 15px;
+        padding-bottom: 9px;
+        border-radius: 9px;
+    }
+    footer .head2 {
+        top: 30px;
+        left: 40px;
+
+    }
+    .links li {
+        padding-top: 120px;
+        padding-left: 27px;
+    }
+    #last {
+        padding: 15px;
+    }
+}
+@media (width<630px){
+    #navigation_bar {
+        left: 0px;
+        right: 0px;
+        top: 9px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #navigation_bar a{
+        font-weight: bold;
+    }
+    #navigation_bar #hide {
+        display: none;
+    }
+    #bottom {
+        margin: 1em;
+        padding: 3em 1em 3em 1em;
+    }
+    footer {
+        margin: 20px 15px;
+        padding-bottom: 9px;
+        border-radius: 9px;
+    }
+    footer .head2 {
+        top: 30px;
+        left: 40px;
+    }
+    .links li {
+        padding-top: 120px;
+        padding-left: 27px;
+    }
+    .links .shrink {
+        padding-top: 30px;
+    }
+    #last {
+        padding: 15px;
+    }
+}
+@media (width>860px){
+    #navigation_bar {
+        top: 16px;
+        left: 5%;
+        width: 90%;
+        border-radius: 20px;
+    }
+    #navigation_bar a{
+        font-weight: bolder;
+    }
+    #bottom {
+        margin: 3em;
+        padding: 5em 3em 5em 3em;
+    }
+    footer {
+        margin: 30px 20px;
+        padding-bottom: 12px;
+        border-radius: 10px;
+    }
+    footer .head2 {
+        top: 40px;
+        left: 60px;
+    }
+    .links li {
+        padding-top: 150px;
+        padding-left: 60px;
+    }
+    #last {
+        padding: 15px;
+    }
+}
+
+@media (width>1200px){
+    #bottom {
+        margin: 3em;
+        padding: 6em 3em 6em 3em;
+    }
+    #bottom h2 {
+        padding-bottom: 2em;
+    }
+}
