@@ -178,3 +178,43 @@ footer .head2 {
         padding: 15px;
     }
 }
+@media (width<400px){
+    #navigation_bar {
+        height: 4.5em;
+        left: 0px;
+        right: 0px;
+        top: 9px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #navigation_bar a{
+        background: none;
+        font-weight: bold;
+    }
+    #navigation_bar #hide {
+        display: none;
+    }
+    #first-part h2 {
+        padding-left: 30%;
+    }
+
+    footer {
+        margin: 20px 15px;
+        padding-bottom: 9px;
+        border-radius: 9px;
+    }
+    footer .head2 {
+        top: 30px;
+        left: 20%;
+    }
+    .links li {
+        padding-top: 90px;
+        padding-left: 27px;
+    }
+    .links .shrink {
+        padding-top: 50px;
+    }
+    #last {
+        padding: 15px;
+    }
+}
