@@ -37,7 +37,7 @@ body {
     margin-top: 6em;
     height: 24em;
     background-attachment: initial;
-    background-image: url(abc.jpg);
+    background-image: url(/images/abc.jpg);
     background-position:center;
     background-repeat: no-repeat;
     border-radius: 0.3em;
@@ -130,7 +130,7 @@ footer .head2 {
         padding: 15px;
     }
 }
-@media (width<630px){
+@media (width<630px) and (width>=400px){
     #navigation_bar {
         left: 0px;
         right: 0px;
@@ -207,5 +207,46 @@ footer .head2 {
     }
     #bottom h2 {
         padding-bottom: 2em;
+    }
+}
+
+@media (width<400px){
+    #navigation_bar {
+        height: 4.5em;
+        left: 0px;
+        right: 0px;
+        top: 9px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #navigation_bar a{
+        background: none;
+        font-weight: bold;
+    }
+    #navigation_bar #hide {
+        display: none;
+    }
+    #bottom {
+        margin: 1em 0.5em;
+        padding: 3em 1em 3em 1em;
+    }
+    footer {
+        margin: 20px 15px;
+        padding-bottom: 9px;
+        border-radius: 9px;
+    }
+    footer .head2 {
+        top: 20px;
+        left: 40px;
+    }
+    .links li {
+        padding-top: 80px;
+        padding-left: 27px;
+    }
+    .links .shrink {
+        padding-top: 60px;
+    }
+    #last {
+        padding: 15px;
     }
 }
