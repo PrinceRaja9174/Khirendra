@@ -37,7 +37,7 @@ body {
     margin-top: 6em;
     height: 24em;
     background-attachment: initial;
-    background-image: url(/images/abc.jpg);
+    background-image: url(abc.jpg);
     background-position:center;
     background-repeat: no-repeat;
     border-radius: 0.3em;
